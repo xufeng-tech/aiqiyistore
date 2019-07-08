@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .brand {
+            height: 340px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            width: 1200px;
+        }
+        
+        .brand ul {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        
+        .brand ul li {
+            width: 1200px;
+            height: 245px;
+            float: left;
+        }
+        
+        .brand ul li .mod-brand-item {
+            float: left;
+            margin: -1px 0 0 -1px;
+        }
+        
+        .brand ul li .mod-brand-item a {
+            display: block;
+            overflow: hidden;
+            width: 119px;
+            height: 119px;
+            border: 1px solid #e5e5e5;
+        }
+        
+        .brand ol {
+            position: absolute;
+            width: 180px;
+            height: 20px;
+            left: 50%;
+            margin-left: -90px;
+            bottom: 20px;
+        }
+        
+        .brand ol li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #000;
+            margin: 0 5px;
+            text-indent: -99999px;
+            cursor: pointer;
+        }
+        
+        .brand ol li.active {
+            background: blue;
+        }
+        
+        #right,
+        #left {
+            font-size: 100px;
+            color: #fff;
+            font-family: verdana;
+            position: absolute;
+            text-decoration: none;
+            top: 110px;
+            display: none;
+        }
+        
+        #left {
+            left: 20px;
+        }
+        
+        #right {
+            right: 20px;
+        }
+        
+        #right:hover,
+        #left:hover {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="brand">
+        <!-- 图片 -->
+        <ul>
+            <li>
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+            </li>
+
+            <li>
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+                <div class="mod-brand-item">
+                    <a href="#" target="_blank">
+                        <img src="img/0e59c0744d734d0f9053e15be0173d28.jpg" width="120" height="120" alt=""> </a>
+                </div>
+
+
+
+            </li>
+
+
+        </ul>
+        <!-- 小圆圈 -->
+        <ol>
+            <li class="active">1</li>B
+            <li>1</li>
+
+        </ol>
+        <!-- 箭头 -->
+        <a href="javascript:;" id="left">&lt;</a>
+        <a href="javascript:;" id="right">&gt;</a>
+    </div>
+    <script src="script/thirdplugins/jquery.min.js"></script>
+    <script>
+        class Brandbanner {
+            constructor() {
+                this.brand = $('.brand');
+                this.picul = $('.brand ul');
+                this.picli = $('.brand ul li');
+                this.btnli = $('.brand ol li');
+                this.left = $('#left');
+                this.right = $('#right');
+                this.num = 0;
+                this.timer = null;
+            }
+            init() {
+                let _this = this;
+                let $first = this.picli.first().clone();
+                let $last = this.picli.last().clone();
+                this.picul.prepend($last);
+                this.picul.append($first);
+                this.liwidth = this.picli.eq(0).width();
+                this.picul.width($('.brand ul li').size() * this.liwidth).css('left', -this.liwidth);
+
+                this.btnli.on('click', function() {
+                    _this.num = $(this).index(); //当前按钮的索引
+                    _this.piculmove(_this.num);
+                    _this.btnli.eq(_this.num).addClass('active').siblings().removeClass('active');
+                });
+
+                this.brand.hover(function() {
+                    $('#left,#right').show();
+                    clearInterval(_this.timer);
+                }, function() {
+                    $('#left,#right').hide();
+                    _this.autoplay();
+                });
+
+                this.right.on('click', function() {
+                    _this.num++;
+                    if (_this.num === _this.btnli.length) {
+                        _this.btnli.eq(0).addClass('active').siblings().removeClass('active');
+                    } else {
+                        _this.btnli.eq(_this.num).addClass('active').siblings().removeClass('active');
+                    }
+                    _this.piculmove(_this.num);
+                });
+
+                this.left.on('click', function() {
+                    _this.num--;
+                    _this.btnli.eq(_this.num).addClass('active').siblings().removeClass('active');
+                    _this.piculmove(_this.num);
+                });
+                this.autoplay();
+            }
+            autoplay() {
+                let _this = this;
+                this.timer = setInterval(function() {
+                    _this.right.click();
+                }, 3000);
+            }
+
+            piculmove(index) {
+                let _this = this;
+                this.picul.animate({
+                    left: -(this.num + 1) * this.liwidth
+                }, 100, function() {
+                    if (_this.num === _this.btnli.length) {
+                        _this.picul.css('left', -_this.liwidth);
+                        _this.num = 0;
+                    }
+                    if (_this.num === -1) {
+                        _this.picul.css('left', -_this.liwidth * _this.btnli.length - 1);
+                        _this.num = _this.btnli.length - 1;
+                    }
+                });
+
+            }
+        }
+        new Brandbanner().init();
+    </script>
+</body>
+
+</html>

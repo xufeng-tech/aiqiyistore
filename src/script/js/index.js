@@ -202,24 +202,24 @@
 ! function() {
 
     $.ajax({
-        url: 'http://localhost/aiqiyi/php/selected.php',
+        url: 'http://10.31.158.55/aiqiyistore/php/selected.php',
         dataType: 'json'
     }).done(function(data) {
-        var $html = '<ul>';
+        var $html = '<ul class="tchoiceness-productList">';
         console.log(data);
         $.each(data, function(index, value) {
             $html += `
             <li>
             <div class="tchoiceness-product">
-                <a class="tchoiceness-productPic" href="details.html?sid=${piclist[i].picid}" style="display:block !important;" target="_blank">
-                    <img alt="jrjxPic" src="${piclist[i].url}" width="140" height="140">
+                <a class="tchoiceness-productPic" href="details.html?sid=${value.picid}" style="display:block !important;" target="_blank">
+                    <img alt="jrjxPic" src="${value.url}" width="140" height="140">
                 </a>
                 <div class="tchoiceness-productInfo">
-                    <p class="tchoiceness-productTitle"><a href="#" style="display:block !important;" target="_blank">${piclist[i].title}</a></p>
-                    <p class="tchoiceness-productSubTitle"><span class="tchoiceness-productStatus"><em>${piclist[i].sortname}</em></span>${piclist[i].descript}</p>
+                    <p class="tchoiceness-productTitle"><a href="#" style="display:block !important;" target="_blank">${value.title}</a></p>
+                    <p class="tchoiceness-productSubTitle"><span class="tchoiceness-productStatus"><em>${value.sortname}</em></span>${value.descript}</p>
                     <p class="tchoiceness-productDesc">
-                        <span class="tchoiceness-productPrice">${piclist[i].price}</span>
-                        <span class="tchoiceness-productSale">已售 ${piclist[i].sell}</span>
+                        <span class="tchoiceness-productPrice">${value.price}</span>
+                        <span class="tchoiceness-productSale">已售 ${value.sell}</span>
                     </p>
                 </div>
             </div>
@@ -228,5 +228,14 @@
         });
         $html += '</ul>';
         $('.goodslist').html($html);
+    });
+}();
+
+;
+! function() {
+    $(this).on('click', function() {
+        let _this = this;
+        $('.big_topBanner').show();
+        $('.small_topBanner').hide();
     });
 }();

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="keywords" content="网上购物,网上商城,视频购物,明星服装,明星店铺,爱奇艺商城">
+    <meta name="description" content="爱奇艺商城是国内首家以影视剧为依托，提供热门的影视剧、动漫的明星服装，周边商品的在线购买服务；正品低价、配送及时、放心购物。">
+    <title>爱奇艺商城-购享娱乐</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="mod-topMenu" id="block-A" data-block-name="顶部导航">
+        <div class="main">
+            <div class="topNav">
+                <div class="topNav_left" id="widget-userregistlogin" style="display: block;">
+                    <!-- hover 追加 top_loginMenu-hover -->
+                    <!-- <div class="top_loginMenu">
+                        <div class="menu-hd">
+                            <a class="header-name" href="#"></a>
+                            <i class="topNav_icon watchS_icon"></i>
+                        </div>
+                    </div> -->
+                    <span class="header-greeting">欢迎来到爱奇艺商城</span>
+                    <div class="top_loginMenu">
+                        <a class="header-login" href="#" style="display: block;">请登录</a>
+                        <a class="header-signUp" href="#" style="display: block;">免费注册</a>
+                    </div>
+                    <div class="loginName_menu-bd" style="display:none;"></div>
+                </div>
+
+                <div class="topNav_right">
+                    <div class="topNav_orders">
+                        <a class="topMenuCar_link" href="#">
+                            <i class="topMenuCar_icon"></i>
+                            <span class="topR_txt">购物车<i class="orange">0</i>件</span>
+                        </a>
+                    </div>
+                    <div class="topNav_orders">
+                        <a class="myOrders_link" href="#">
+                            <i class="topNav_icon myOrder_icon"></i>
+                            <span class="topR_txt">买家中心</span>
+                        </a>
+                    </div>
+                    <div class="topNav_favorites">
+                        <a class="myFavo_link" href="#">
+                            <i class="topNav_icon myFavo_icon"></i>
+                            <span class="topR_txt">我的收藏</span>
+                        </a>
+                    </div>
+                    <div class="top_cutline"></div>
+
+                    <div class="topNav_watch" id="j-watchus">
+                        <a class="watch_link" href="#">
+                            <i class="topNav_icon watch_icon"></i>
+                            <span class="topR_txt">关注我们</span>
+                            <i class="topNav_icon watchS_icon"></i>
+                            <div class="topNav_watchBox dn">
+                                <div class="watch_L">
+                                    <img src="img/mall_qrcodeNew.jpg">
+                                </div>
+                                <div class="watch_R">
+                                    <p>微信扫一扫</p>
+                                    <p>了解商城动态</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="top_cutline"></div>
+                    <div class="topNav_business">
+                        <a class="bus_link" href="#">
+                            <i class="topNav_icon bus_icon"></i>
+                            <span class="topR_txt">商家中心</span>
+                        </a>
+                    </div>
+                    <div class="top_cutline"></div>
+                    <div class="topNav_index">
+                        <a class="bus_link" href="#">
+                            <span class="topR_txt">爱奇艺首页</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <div class="mod-header" id="block-B">
+        <div class="main mb30">
+
+            <div class="header_logo">
+                <h1>
+                    <a href="#" title="爱奇艺商城">
+                        <img src="img/logo1126.png" alt="爱奇艺商城">
+                    </a>
+                </h1>
+            </div>
+            <!-- 居右/居中的搜索框 -->
+
+            <div class="header_searchBox  header_searchBox_fl">
+                <div class="search_panel">
+                    <form action="#" method="GET" target="_blank">
+                        <input class="search_txt" type="text" value="" style="color: rgb(153, 153, 153);">
+                        <input class="search_btn" type="button" value="搜索">
+                        <input type="hidden" name="keyword" value="复仇者联盟" style="display: none;"><input type="hidden" name="source" value="input" style="display: none;"></form>
+                    <div class="in_Suggest" style="display:none;">
+                        <ul class="in_Suggest_list"></ul>
+                    </div>
+                </div>
+
+                <div class="search_hots">
+
+                    <a href="#" target="_blank">漫威</a>
+                    <div class="top_cutline"></div>
+                    <a href="#" target="_blank" class="hots">流浪地球</a>
+                    <div class="top_cutline"></div>
+                    <a href="#" target="_blank">i71定制</a>
+                    <div class="top_cutline"></div>
+                    <a href="#" target="_blank" class="hots">新白娘子传奇</a>
+                    <div class="top_cutline"></div>
+                    <a href="#" target="_blank">熊本熊</a>
+                    <div class="top_cutline"></div>
+                    <a href="#" target="_blank" class="hots">火影忍者</a>
+                    <div class="top_cutline"></div>
+                    <a href="#" target="_blank" class="hots">青春有你</a>
+
+                </div>
+            </div>
+            <script>
+                (function() {
+                    //在搜索按钮的点击日志中增加搜索内容keyword字段
+                    try {
+                        var form = Q.$('form[data-suggest-elem=form]');
+                        var input = form.down('[data-suggest-elem=input]');
+                        var btn = form.down('[data-suggest-elem=btn]');
+                        input.on('keyup', function(e) {
+                            btn.attr('data-pb', 'keyword=' + input.value());
+                        });
+                    } catch (e) {}
+                })();
+            </script>
+            <div class="header-right">
+                <div class="arrow-item">
+                    <span class="arrow-left"></span>
+                    <span class="arrow-right"></span>
+                </div>
+                <ul class="header-pro">
+
+                    <li class="active" style="display: none;">
+                        <a href="#" target="_blank">
+                            <img src="https://pic0.iqiyipic.com/common/20190506/2c22cac245414e6dab536a6664133cd7.jpg" width="50" height="50" alt="">
+                            <p><b title="爱奇艺i71VR">爱奇艺i71VR</b><span title="购实惠够全景">购实惠够全景</span></p>
+                        </a>
+                    </li>
+
+                    <li style="display: list-item;">
+                        <a href="#" target="_blank">
+                            <img src="//pic3.iqiyipic.com/common/20180223/cb21b43a3c864f81b77f167fc5908860.jpg" width="50" height="50" alt="">
+                            <p><b title="原创潮流">原创潮流</b><span title="论潮流就服i71">论潮流就服i71</span></p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 二级导航 -->
+    <div class="nav-wrap" id="block-C">
+
+        <div class="nav-center">
+
+
+            <ul class="nav-box" id="j-navLinkBar">
+                <li class="indexActive active"><a class="first_nav" href="#">首页</a></li>
+
+                <li data-elem="navLinkItem">
+                    <a class="first_nav" href="#">
+                        <span>秒杀<i class="nav_hotIcon" style="background-image:url('');"></i>
+                    </span>
+                    </a>
+
+                </li>
+
+                <li data-elem="navLinkItem">
+                    <a class="first_nav" href="#">
+                        <span>京东优选<i class="nav_hotIcon" style="background-image:url('');"></i>
+                    </span>
+                    </a>
+
+                </li>
+
+                <li data-elem="navLinkItem">
+                    <a class="first_nav" href="#">
+                        <span>i71<i class="nav_hotIcon" style="background-image:url('');"></i>
+                    </span>
+                    </a>
+
+                </li>
+
+                <li data-elem="navLinkItem">
+                    <a class="first_nav" href="#">
+                        <span>Apple<i class="nav_hotIcon" style="background-image:url('');"></i>
+                    </span>
+                    </a>
+
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+    <!-- main -->
+    <div class="goodsinfo">
+        <div class="wrap">
+            <div id="spic">
+                <img src="" alt="" id="smallpic">
+                <div id="sf"></div>
+            </div>
+            <div id="bf">
+                <img src="" alt="" id="bpic">
+            </div>
+            <div id="ulist">
+                <a href="javascript:;" id="left">&lt;</a>
+                <div id="list">
+                    <ul>
+
+                    </ul>
+                </div>
+                <a href="javascript:;" id="right">&gt;</a>
+            </div>
+        </div>
+        <div class="goodsinfo-word">
+            <div class="p-name">
+                <a class="loadtitle" href="##"></a>
+            </div>
+            <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
+            <div class="p-btn">
+                <input type="text" id="count" value="1" />
+                <a href="##">加入购物车</a>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div id="block-AR" class="qypage-1200">
+        <div class="mod_footer_icons_ListBox">
+            <div class="footer_icons_List">
+                <ul class="icons_list">
+                    <li class="iconbox">
+                        <div class="iconImg"><img src="//www.iqiyipic.com/common/fix/h5_qiyiShop_img/footer_redzhengLogo.png" alt="全球精选 品牌保障" width="70" height="70"></div>
+                        <div class="iconText">
+                            <p>全球精选</p>
+                            <p>品质保障</p>
+                        </div>
+                    </li>
+                    <li class="iconbox">
+                        <div class="iconImg"><img src="//www.iqiyipic.com/common/fix/h5_qiyiShop_img/footer_redmoneyLogo.png" alt="限时特卖 甄选好货" width="70" height="70"></div>
+                        <div class="iconText">
+                            <p>限时特卖</p>
+                            <p>甄选好货</p>
+                        </div>
+                    </li>
+                    <li class="iconbox">
+                        <div class="iconImg"><img src="//www.iqiyipic.com/common/fix/h5_qiyiShop_img/footer_redgoodLogo.png" alt="爱奇艺电商 口碑推荐" width="70" height="70"></div>
+                        <div class="iconText">
+                            <p>爱奇艺电商</p>
+                            <p>口碑推荐</p>
+                        </div>
+                    </li>
+                    <li class="iconbox">
+                        <div class="iconImg"><img src="//www.iqiyipic.com/common/fix/h5_qiyiShop_img/footer_redvideoLogo.png" alt="直播购物 看好就买" width="70" height="70"></div>
+                        <div class="iconText">
+                            <p>直播购物</p>
+                            <p>看好就买</p>
+                        </div>
+                    </li>
+                    <li class="iconbox">
+                        <div class="iconImg"><img src="//www.iqiyipic.com/common/fix/h5_qiyiShop_img/footer_redcollectLogo.png" alt="热剧同款 必追单品" width="70" height="70"></div>
+                        <div class="iconText">
+                            <p>热剧同款</p>
+                            <p>必追单品</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_icons_List_second">
+                <ul class="codes_list">
+                    <li class="codeBox" style="width: 20%;">
+                        <div class="codeNarrate" style="margin-left: 102px;"><a href="#" class="footer_explain_first">购物指南</a><a href="#" class="footer_explain_other">购物流程</a><a href="#" class="footer_explain_other">发票制度</a><a href="#" class="footer_explain_other">账户管理</a></div>
+                    </li>
+                    <li class="codeBox" style="width: 20%;">
+                        <div class="codeNarrate" style="margin-left: 102px;"><a href="#" class="footer_explain_first">支付方式</a><a href="#" class="footer_explain_other">支付宝</a><a href="#" class="footer_explain_other">微信</a>
+                            <a href="#" class="footer_explain_other">银行卡</a>
+                        </div>
+                    </li>
+                    <li class="codeBox" style="width:  20%;">
+                        <div class="codeNarrate" style="margin-left: 102px;"><a href="#" class="footer_explain_first">服务保障</a><a href="#" class="footer_explain_other">发货时间</a><a href="#" class="footer_explain_other">运费说明</a><a href="#" class="footer_explain_other">退换货规则</a></div>
+                    </li>
+                    <li class="codeBox" style="width:  20%;">
+                        <div class="codeNarrate" style="margin-left: 102px;"><a href="#" class="footer_explain_first">售后客服</a><a href="#" class="footer_explain_other">订单查询</a><a href="#" class="footer_explain_other">物流查询</a><a href="#" class="footer_explain_other">客服联系</a></div>
+                    </li>
+                    <li class="codeBox" style="width:  20%;">
+                        <div class="codeNarrate" style="margin-left: 102px;"><a href="#" class="footer_explain_first">服务协议</a><a href="#" class="footer_explain_other">服务说明</a><a href="#" class="footer_explain_other">使用规则</a><a href="#" class="footer_explain_other">信息保护</a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_codes_List">
+                <ul class="codes_list">
+                    <li class="codeBox">
+                        <div class="codeImg"><img src="//www.iqiyipic.com/common/fix/h5_qiyiShop_img/iqiyi_mall_code.png" alt="爱奇艺商城手机版" width="120" height="120"></div>
+                        <div class="codeNarrate">
+                            <h1>爱奇艺商城手机版</h1>
+                            <p>爱奇艺商城-购享娱乐</p>
+                            <p>精彩在手，说有就有</p>
+                            <p>手机购物更方便</p>
+                        </div>
+                    </li>
+                    <li class="codeBox">
+                        <div class="codeImg"><img src="//www.iqiyipic.com/common/fix/h5_qiyiShop_img/iqiyi_mall_num.jpg" alt="爱奇艺商城微信" width="120" height="120"></div>
+                        <div class="codeNarrate">
+                            <h1>爱奇艺商城微信</h1>
+                            <p>关注微信</p>
+                            <p>提前了解爱奇艺商城</p>
+                            <p>最新咨询</p>
+                        </div>
+                    </li>
+                    <li class="codeBox">
+                        <div class="codeImg"><img src="//www.iqiyipic.com/common/fix/h5_qiyiShop_img/iqiyi_mall_ring.jpg" alt="爱奇艺商城微信" width="120" height="120"></div>
+                        <div class="codeNarrate">
+                            <h1>爱奇艺商城微信(订阅号)</h1>
+                            <p>关注微信订阅号</p>
+                            <p>订阅一种生活方式</p>
+                            <p>发现时尚趣味</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mod_footer_links">
+            <div class="ftcont" style="padding-top:20px;" id="data-paizhao-div">
+                <ul id="data-paizhao" class="ftList clearfix">
+                    <li>
+                        <div class="mb10"><a data-paizhao-type="net" href="javascript:void(0);" title="京网文[2015]0652-282号-1" rseat="京网文[2015]0652-282号-1">京网文[2015]0652-282号-1</a></div>
+                        <div class="mb10"><a href="#" target="_blank" title="京ICP证110636号" rseat="京ICP证110636号">京ICP证110636号</a></div>
+                    </li>
+                    <li>
+                        <div class="mb10">
+                            <a href="# " target="_blank" title="中国互联网诚信联盟" rseat="中国互联网诚信联盟">
+                                <img src="//www.iqiyipic.com/common/fix/trust.png" alt="中国互联网诚信联盟">中国互联网诚信联盟</a>
+                        </div>
+                        <div class="mb10">
+                            <a href="#" target="_blank" title="经营性网站备案信息" rseat="经营性网站备案信息">
+                                <img src="//www.iqiyipic.com/common/fix/records.png" alt="经营性网站备案信息">&nbsp;经营性网站备案信息
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mb10"><a href="javascript:void(0)" target="_blank" title="出版物经营许可证">出版物经营许可证 </a> </div>
+                        <div class="mb10"><em rseat="京公网安备 11010802010263号" style="color: #777;">京公网安备 11010802010263号</em></div>
+                    </li>
+                    <li>
+                        <div class="mb10"><a href="javascript:void(0);" title="信息网络传播视听节目许可证 0110544号">信息网络传播视听节目许可证 0110544号</a></div>
+                        <div class="mb10"><a href="javascript:void(0);" title="增值电信业务经营许可证 B2-20120273">增值电信业务经营许可证 B2-20120273</a></div>
+                    </li>
+                    <li class="last">
+                        <div class="mb10"><a href="javascript:void(0);" title="广播电视节目制作经营许可证 (京)字第1938号">广播电视节目制作经营许可证 (京)字第1938号</a></div>
+                        <div class="mb10"><a href="javascript:void(0);" title="互联网药品信息服务资格证书 (京)-经营性-2013-0012">互联网药品信息服务资格证书 (京)-经营性-2013-0012</a></div>
+                    </li>
+                </ul>
+                <ul class="ftList clearfix">
+                    <li>
+                        <div class="mb10"><a href="javascript:void(0);" title="食品许可证JY11108111598788" target="_blank">食品许可证JY11108111598788</a></div>
+                    </li>
+                    <li class="mb10">
+                        <a rel="nofollow" href="//www.iqiyipic.com/common/fix/yyzz.jpeg" target="_blank" title="营业执照" class="law-link ">营业执照</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footmenu" style="padding: 5px 0 10px 0;">
+                <a href="" rel="nofollow" title="公司介绍" rseat="公司介绍" target="_blank">公司介绍</a>
+                <i class="cutline">|</i>
+                <a href="" rel="nofollow" title="新闻动态" rseat="新闻动态" target="_blank">新闻动态</a>
+                <i class="cutline">|</i>
+                <a href="" rel="nofollow" title="联系方式" rseat="联系方式" target="_blank">联系方式</a>
+                <i class="cutline">|</i>
+                <a href="" rel="nofollow" title="招聘英才" target="_blank">招聘英才</a>
+                <i class="cutline">|</i>
+                <a href="" rel="nofollow" title="爱奇艺实验室" target="_blank">爱奇艺实验室</a>
+                <i class="cutline">|</i>
+                <a href="" rel="nofollow" title="开放平台" rseat="开放平台" target="_blank">开放平台</a>
+                <i class="cutline">|</i>
+                <a href="" rel="nofollow" title="爱奇艺内容合作标准" target="_blank">爱奇艺内容合作标准</a>
+                <i class="cutline">|</i>
+                <a href="" class="s1" title="爱奇艺号" target="_blank">爱奇艺号</a>
+                <i class="cutline">|</i>
+                <a href="" rel="nofollow" title="安全应急响应中心" target="_blank">安全应急响应中心</a>
+                <i class="cutline">|</i>
+                <a href="" rel="nofollow" title="帮助中心" target="_blank">帮助中心</a>
+                <i class="cutline">|</i>
+                <a href="" rel="nofollow" title="侵权投诉" target="_blank">侵权投诉</a>
+            </div>
+            <div class="clearfix tc" style="padding: 5px 0 5px 0;">
+                <a title="中国互联网举报中心" target="_blank" href=""><img alt="中国互联网举报中心" src="//pic4.iqiyipic.com/common/20160115/c116ab2233db4db2902f339a76e56d21.png"><span style="color:#666;">中国互联网举报中心</span></a>
+                <a title="网络举报APP下载" target="_blank" href=""><span class="ml30" style="color:#666;">网络举报APP下载</span></a>
+                <a title="网上有害信息举报专区" target="_blank" href=""><span class="ml30" style="color:#666;">网上有害信息举报专区</span></a>
+                <a title="网上暴恐有害信息举报" target="_blank" href=""><span class="ml30" style="color:#666;">网上暴恐有害信息举报</span></a>
+                <a title="儿童色情信息举报专区" target="_blank" href=""><span class="ml30" style="color:#666;">儿童色情信息举报专区</span></a>
+                <span class="ml30">违法和不良信息举报电话：400-923-7171</span><span class="ml30 mr30">举报邮箱：<a href="" style="color:#666;">jubao365@qiyi.com</a></span>
+            </div>
+
+            <div id="data-paizhao-content" style="display: none;" class="xkPopbox">
+                <a data-btn="j-close-btn" class="xclose" href="javascript:void(0);"></a>
+                <img alt="网络文化经营许可证" data-src="//www.iqiyipic.com/common/license/IEculture.jpeg " style="display:none;width:527px;height:748px;">
+                <img alt="广播电视节目制作经营许可证" data-src="//www.iqiyipic.com/common/license/radioAndTv.png" style="display:none;width:966px;height:744px;">
+                <img alt="信息网络传播视听节目许可证 0110544号" data-src="//www.iqiyipic.com/common/license/AudioLicense.png " style="display:none;width:392px;height:1632px;">
+                <img alt="互联网药品信息服务资格证书 (京)-经营性-2013-0012" data-src="//www.iqiyipic.com/common/license/IEdrug.jpg" style="display:none;width:752px;height:542px;">
+                <img alt="增值电信业务经营许可证 B2-20120273" data-src="//www.iqiyipic.com/common/license/AddvalueTele.jpeg " style="display:none;width:873px;height:429px;">
+                <img alt="出版物经营许可证" data-src="//www.iqiyipic.com/common/license/Publicationlicense.png" style="display:none;width:811px;height:576px;">
+                <img alt="食品许可证" data-src="//www.iqiyipic.com/common/license/foodLicense.jpeg" style="display:none;width:701px;height:510px;">
+            </div>
+            <div class="copyright" style="padding: 5px 0 5px 0;">
+                <a href="#" target="_blank" title="反盗版和反盗链权利声明">反盗版和反盗链权利声明</a>&nbsp;&nbsp;&nbsp; Copyright © 2018 <a href="#" title="爱奇艺">爱奇艺</a> <span> All Rights Reserved</span>
+            </div>
+        </div>
+    </div>
+    <script src="script/thirdplugins/jquery.js"></script>
+    <script src="script/js/index.js"></script>
+    <script src="script/js/cookie.js"></script>
+    <script src="script/js/details.js"></script>
+</body>
+
+</html>

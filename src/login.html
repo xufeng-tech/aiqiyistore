@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        form {
+            width: 600px;
+            height: 300px;
+            border: 1px solid #000000;
+            box-shadow: 5px 5px 2px #000000;
+            margin: auto;
+            position: fixed;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        
+        .inputs {
+            width: 400px;
+            height: 60px;
+            font-size: 22px;
+            text-align: center;
+            line-height: 60px;
+            margin: auto;
+            margin-top: 30px;
+        }
+        
+        .inputs input:not([type=submit]) {
+            width: 250px;
+            height: 26px;
+            margin-left: 30px;
+        }
+        
+        .bn {
+            width: 120px;
+            height: 40px;
+            border: 1px solid #000000;
+            background-color: white;
+            display: block;
+            float: left;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .bn:first-child {
+            margin-left: 40px;
+        }
+        
+        a.bn {
+            color: black;
+            text-decoration: none;
+            width: 118px;
+            height: 38px;
+            line-height: 38px;
+            margin-left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="http://localhost/JS/login/server/signIn.php" method="get">
+        <div class="inputs">
+            <label for="user">用户名</label><input type="text" id="user" name="user"><br>
+        </div>
+        <div class="inputs">
+            <label for="pass">密&nbsp;&nbsp;&nbsp;码</label><input type="password" id="pass" name="pass"><br>
+        </div>
+        <div class="inputs">
+            <input type="submit" value="登录" class="bn">
+            <a href="2、注册页面.html" class="bn">注册</a>
+        </div>
+    </form>
+
+    <script>
+        /* var button=document.querySelector("button");
+                        button.addEventListener("click",clickHandler);
+                        function clickHandler(e) {
+                            e.preventDefault();
+                            location.href="http://localhost:63342/client/2、注册页面.html"
+                        }*/
+    </script>
+
+</body>
+
+</html>

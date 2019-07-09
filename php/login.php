@@ -1,5 +1,5 @@
 <?php
-require "connuser.php";
+require "connect.php";
 
 if(isset($_POST['name'])){
 	$username=$_POST['name'];

@@ -12,7 +12,7 @@
         }
         
         fieldset {
-            width: 680px;
+            width: 630px;
             margin: auto;
             position: fixed;
             bottom: 0;
@@ -54,11 +54,11 @@
 <body>
     <fieldset>
 
-        <form action="../php/registry.php" method="post" id="form1">
+        <form action="http://10.31.158.55/aiqiyistore/php/registry.php" method="post" id="form1">
             <p>
                 <label class="fwidth" for="username">用户名字：</label>
                 <input type="text" name="username" id="username" placeholder="请输入您的用户名" />
-                <label id="username-error" class="error" for="username">3-15字符长度，支持汉字、字母、数字</label>
+                <label id="username-error" class="error" for="username">请输入您的用户名</label>
             </p>
             <p>
                 <label class="fwidth" for="password">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
@@ -83,7 +83,6 @@
     <script src="script/thirdplugins/jquery.js" type="text/javascript" charset="utf-8"></script>
     <script src="script/thirdplugins/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
-        //表单验证-用户名
         $(function() {
             $('#form1').validate({
                 rules: {
@@ -92,7 +91,7 @@
                         minlength: 2,
                         maxlength: 10,
                         remote: {
-                            url: "reg.php",
+                            url: "http://10.31.158.55/aiqiyistore/php/registry.php",
                             type: "post"
                         }
                     },
@@ -112,7 +111,7 @@
                 messages: {
                     username: {
                         required: '用户名不能为空',
-                        minlength: '用户名长度不能小于1',
+                        minlength: '用户名长度不能小于2',
                         maxlength: '用户名长度不能大于10',
                         remote: '用户名已存在'
                     },

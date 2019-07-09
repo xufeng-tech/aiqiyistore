@@ -1,5 +1,7 @@
 <?php
-	require "connuser.php";
+	require "connect.php";
+	
+	
 	if(isset($_POST['username']) || isset($_POST['submit'])){
 		$username=@$_POST['username'];
 	}else{
@@ -22,8 +24,9 @@
 		$user=$_POST['username'];
 		$pass=md5($_POST['password']);
 		$email=$_POST['email'];
+		
 		$query="insert user(uid,username,password,email,regdate) values(null,'$user','$pass','$email',NOW())";
 		mysql_query($query);
-		header('location:login.html');
+		header('location:../src/login.html');
 	}
 ?>

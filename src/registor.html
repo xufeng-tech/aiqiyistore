@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -269,13 +269,168 @@
                 </td>
             </tr>
 
-            <tr>
-                <td colspan="6">
-                    <button type="submit">注册</button>
-                </td>
-            </tr>
+            
         </table>
     </form>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        form {
+            width: 710px;
+            height: 380px;
+            border: 1px solid #000000;
+            box-shadow: 5px 5px 2px #000000;
+            margin: auto;
+            position: fixed;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            font-size: 15px;
+            padding-top: 20px;
+        }
+        
+        input:not([type=submit]) {
+            margin: 8px 10px;
+        }
+        
+        label:not([for*=n]) {
+            padding-left: 100px;
+        }
+        
+        input:not([type=submit]):not([type=radio]) {
+            width: 240px;
+            height: 28px;
+            line-height: 20px;
+        }
+        
+        [type=submit] {
+            width: 140px;
+            height: 40px;
+            border: 1px solid #000000;
+            background-color: white;
+            margin-left: 230px;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+        
+        #dl {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <legend>用户注册</legend>
+    <form action="reg.php" method="post" id="form1">
+        <tr>
+            <td>
+                <label class="fwidth" for="username">用户名：</label>
+            </td>
+            <td>
+                <input type="text" name="username" id="username" />
+            </td>
+            <td>
+                <label id="username-error" class="error" for="username">(必填，3-15字符长度，支持汉字、字母、数字及_)</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label class="fwidth" for="password">密码：</label></td>
+            <td> <input type="password" name="password" id="password" /></td>
+            <td><label id="password-error" class="error" for="password">(必填，不得少于6位)</label></td>
+        </tr>
+        <tr>
+            <td><label class="fwidth" for="repass">密码重复：</label></td>
+            <td><input type="password" name="repass" id="repass" /></td>
+            <td><label id="repass-error" class="error" for="repass">(必填，不得少于6位)</label></td>
+        </tr>
+        <tr>
+            <td><label class="fwidth" for="email">邮箱：</label></td>
+            <td><input type="text" name="email" id="email" /></td>
+            <td><label id="email-error" class="error" for="email">(必填)</label></td>
+        </tr>
+        <tr>
+            <td colspan="6">
+                <button type="submit">注册</button>
+            </td>
+        </tr>
+        <!-- <p>
+            <input type="submit" value="注册" name="submit" />
+        </p> -->
+    </form>
+
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        //表单验证-用户名
+        $(function() {
+            $('#form1').validate({
+                rules: {
+                    username: {
+                        required: true,
+                        minlength: 2,
+                        maxlength: 10,
+                        remote: { //将前端的name给后端
+                            url: "reg.php", //后台处理程序
+                            type: "post" //数据发送方式
+                        }
+                    },
+                    password: {
+                        required: true,
+                        minlength: 6
+                    },
+                    repass: {
+                        required: true,
+                        equalTo: '#password'
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    username: {
+                        required: '用户名不能为空',
+                        minlength: '用户名不能小于2',
+                        maxlength: '用户名不能大于10',
+                        remote: '用户名已存在'
+                    },
+                    password: {
+                        required: '密码不能为空'
+                    },
+                    repass: {
+                        required: '密码重复不能为空'
+                    },
+                    email: {
+                        required: '电子邮箱不能为空',
+                        email: '你输入的格式有误'
+                    }
+                }
+
+            });
+        });
+
+        $.validator.setDefaults({
+            /*添加校验成功后的执行函数--修改提示内容，并为正确提示信息添加新的样式(默认是valid)*/
+            success: function(label) {
+                label.text('√').css('color', 'green').addClass('valid');
+            }
+        });
+    </script>
 </body>
 
 </html>

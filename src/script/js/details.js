@@ -10,12 +10,14 @@
         },
         dataType: 'json'
     }).done(function(data) {
-        console.log(data.title);
         $('#smallpic').attr('src', data.url);
         $('#bpic').attr('src', data.url);
         $('#smallpic').attr('sid', data.picid);
-        $('.mod_pd_crumbs_el').html(data.title);
+        $('.mod_pd_crumbs_el').html(data.detailtitle);
         $('.loadpcp').html(data.price);
+        $('.detail-title').html(data.detailtitle);
+        $('.detail-subtitle').html(data.detaildescript);
+        $('.c-c01').html(data.sell);
     });
 
     ! function() {

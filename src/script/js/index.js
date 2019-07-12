@@ -1,45 +1,9 @@
-// ;
-// ! function($) {
-//     //banner数据
-//     $.ajax({
-//         url: 'php/banner.php',
-//         dataType: 'json'
-//     }).done(function(bannerdata) {
-//         $.each(bannerdata, function(index, value) {
-//             var $bannerstr = '<ul>';
-
-//         });
-//     });
-
-//     //lunbo数据
-//     $.ajax({
-//         url: 'php/banner.php',
-//         dataType: 'json'
-//     }).done(function(bannerdata) {
-//         $.each(bannerdata, function(index, value) {
-//             var $bannerstr = '<ul>';
-
-//         });
-//     });
-//     //tab切换数据
-//     $.ajax({
-//         url: 'php/banner.php',
-//         dataType: 'json'
-//     }).done(function(bannerdata) {
-//         $.each(bannerdata, function(index, value) {
-//             var $bannerstr = '<ul>';
-
-//         });
-//     });
-// }(jQuery);
-
 ! function() {
-    //banner效果
+
 
 }(jQuery);
 
 ! function() {
-    //lunbo效果
     class Aiqiyi {
         constructor() {
             this.banner = $('.banner');
@@ -61,7 +25,7 @@
             this.brandul.width($('.banner ul li').size() * this.liwidth).css('left', -this.liwidth);
 
             this.btnli.on('click', function() {
-                _this.num = $(this).index(); //当前按钮的索引
+                _this.num = $(this).index();
                 _this.brandulmove(_this.num);
                 _this.btnli.eq(_this.num).addClass('active').siblings().removeClass('active');
             });
@@ -200,7 +164,6 @@
 
 ;
 ! function() {
-
     $.ajax({
         url: 'http://10.31.158.55/aiqiyistore/php/selected.php',
         dataType: 'json'

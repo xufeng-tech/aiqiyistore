@@ -1,29 +1,22 @@
 <?php
 	require "connect.php";
 	
-	
-	if(isset($_POST['username']) || isset($_POST['submit'])){
-		$username=@$_POST['username'];
-	}else{
-		exit('非法操作');
+	if(isset($_POST['name'])){
+		$name=$_POST['name'];
+		$result=$conn->query("select * from user where username='$name'");
+		if($result->fetch_assoc()){
+			echo true;
+		}else{
+			echo false;
+		}
 	}
-	
-	
-	
-	$query="select * from user where username='$username'";
-	$result=mysql_query($query);
-	
-	if(mysql_fetch_array($result)){
-		echo 'false';
-	}else{
-		echo 'true';
-	}
-	
-	
-	if(isset($_POST['submit']) && $_POST['submit']=="注册"){
+
+
+	if(isset($_POST['submit'])){
 		$user=$_POST['username'];
 		$pass=md5($_POST['password']);
 		$email=$_POST['email'];
+		echo $user;
 		
 		$query="insert user(uid,username,password,email,regdate) values(null,'$user','$pass','$email',NOW())";
 		mysql_query($query);

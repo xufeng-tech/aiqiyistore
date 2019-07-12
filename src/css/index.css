@@ -1647,12 +1647,109 @@
     
     .p-price {
         margin-left: 50px;
-        margin-top: 40px;
-        width: 300px;
         height: 50px;
         background: rgba(183, 183, 183, 0.4);
         line-height: 50px;
         font-size: 15px;
+    }
+    
+    .detail_seckill_panel {
+        background: #ee394b;
+        height: 37px;
+        line-height: 37px;
+        padding-left: 10px;
+    }
+    
+    .detail_seckill_panel .detail_seckill_icon {
+        position: relative;
+        display: inline-block;
+        background: #ffed64;
+        font-size: 14px;
+        color: #ee394b;
+        width: 74px;
+        height: 24px;
+        line-height: 24px;
+        padding-left: 25px;
+        border-radius: 24px;
+        box-sizing: border-box;
+    }
+    
+    .detail_seckill_panel .detail_seckill_icon:before {
+        content: "";
+        position: absolute;
+        left: 7px;
+        top: 4px;
+        width: 14.25px;
+        height: 14.25px;
+        background: url(../img/pctimeicon.png) no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+    
+    .detail_seckill_panel .detail_seckill_info {
+        margin-left: 10px;
+        color: #fff;
+    }
+    
+    .detail_seckill_panel .detail_seckill_info em {
+        margin-left: 10px;
+        color: #ffed64;
+    }
+    
+    .detail-ind-panel {
+        overflow: hidden;
+        padding: 15px 0 10px 0;
+        border-bottom: 1px dotted #c8c8c8;
+        display: block;
+        width: 100%;
+        margin-left: 50px;
+    }
+    
+    .detail-ind-panel .ind-panel-item {
+        /* display: inline; */
+        float: left;
+        width: 100px;
+        /* border-left: 1px solid #ccc; */
+        margin-left: -1px;
+        text-align: center;
+    }
+    
+    .detail-ind-panel .ind-panel-item .item-label {
+        color: #3c3c3c;
+        font-family: Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    }
+    
+    .ind-panel-Count .item-label i {
+        width: 16px;
+        height: 12px;
+        background: url(//www.iqiyipic.com/common/fix/iqiyi_shop_images/detail-icon.png) no-repeat;
+        display: inline-block;
+        vertical-align: -1px;
+    }
+    
+    .c-c01 {
+        color: #c00;
+    }
+    
+    .c-c00 {
+        color: #c00;
+    }
+    
+    .detail-ind-panel .ind-panel-point {
+        /* display: inline; */
+        float: left;
+        width: 100px;
+        border-left: 1px solid #ccc;
+        margin-left: -1px;
+        text-align: center;
+    }
+    
+    .ind-panel-point .item-label i {
+        width: 16px;
+        height: 12px;
+        background: url(//www.iqiyipic.com/common/fix/iqiyi_shop_images/detail-icon.png) no-repeat -22px 0;
+        display: inline-block;
+        vertical-align: -1px;
     }
     
     .p-btn {
@@ -1684,6 +1781,25 @@
         margin-left: 10px;
     }
     
+    .detail_ser {
+        margin-top: 90px;
+        margin-left: 50px
+    }
+    
+    .pr {
+        position: relative;
+    }
+    
+    .detail_promiseUl {
+        font-size: 0;
+    }
+    
+    .detail_promiseUl li.cn_label {
+        margin-right: 0;
+        font-size: 12px;
+        color: #777;
+    }
+    
     .detail-title {
         overflow: hidden;
         color: #333;
@@ -1691,6 +1807,34 @@
         font-family: "\5FAE\8F6F\96C5\9ED1";
         font-weight: bold;
         display: inline;
+    }
+    
+    .detail_promiseUl li {
+        margin-right: 15px;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        font-size: 0;
+        vertical-align: middle;
+    }
+    
+    .cn_iconTMBY {
+        margin-right: 2px;
+        background: url(//www.iqiyipic.com/common/fix/h5_qiyiShop_img/PC_detail_post.png) no-repeat;
+        background-size: contain;
+    }
+    
+    .cn_icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .cn_info {
+        vertical-align: middle;
+        font-size: 12px;
+        color: #777;
     }
     
     .detail-subtitle {

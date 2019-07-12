@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <title>用户登录</title>
-    <style type="text/css">
+<!DOCTYPE html><html><head><meta charset=utf-8><title>用户登录</title><style type=text/css>
         body {
             font-size: 12px;
             font-family: "微软雅黑";
@@ -65,33 +59,7 @@
             line-height: 38px;
             margin-left: 80px;
         }
-    </style>
-</head>
-
-<body>
-    <div>
-        <fieldset>
-            <div id="error"></div>
-            <form method="post" onsubmit="return false;">
-                <div class="inputs">
-                    <label for="username">用户名</label>
-                    <input id="username" name="username" type="text" autocomplete="off" />
-                </div>
-
-                <div class="inputs">
-                    <label for="password">密&nbsp;&nbsp;&nbsp;码</label>
-                    <input id="password" name="password" type="password" />
-                </div>
-
-                <div class="inputs">
-                    <input type="button" name="submit" value=" 登录  " id="btn" class="bn" />
-                    <!--普通按钮-->
-                    <a href="registor.html" class="bn">注册</a>
-                </div>
-            </form>
-        </fieldset>
-        <script src="script/thirdplugins/jquery.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript">
+    </style></head><body><div><fieldset><div id=error></div><form method=post onsubmit="return false;"><div class=inputs><label for=username>用户名</label> <input id=username name=username type=text autocomplete=off></div><div class=inputs><label for=password>密&nbsp;&nbsp;&nbsp;码</label> <input id=password name=password type=password></div><div class=inputs><input type=button name=submit value=登录 id=btn class=bn><a href=registor.html class=bn>注册</a></div></form></fieldset><script src=script/thirdplugins/jquery.js type=text/javascript charset=utf-8></script><script type=text/javascript>
             function addCookie(key, value, day) {
                 var date = new Date();
                 date.setDate(date.getDate() + day);
@@ -100,8 +68,8 @@
 
 
             $('#btn').on('click', function() {
-                let $username = $('#username').val();
-                let $password = $('#password').val();
+                var $username = $('#username').val();
+                var $password = $('#password').val();
                 $.ajax({
                     type: 'post',
                     url: '../php/login.php',
@@ -120,8 +88,4 @@
                     }
                 })
             });
-        </script>
-    </div>
-</body>
-
-</html>
+        </script></div></body></html>

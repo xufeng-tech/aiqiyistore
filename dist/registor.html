@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <title>用户注册</title>
-    <style type="text/css">
+<!DOCTYPE html><html><head><meta charset=utf-8><title>用户注册</title><style type=text/css>
         body {
             font-size: 12px;
             font-family: "微软雅黑";
@@ -49,39 +43,7 @@
             color: red;
             font-size: 14px;
         }
-    </style>
-</head>
-
-<body>
-    <fieldset>
-        <form action="http://10.31.158.55/aiqiyistore/php/registry.php" method="post" id="form1">
-            <p>
-                <label class="fwidth" for="username">用户名字：</label>
-                <input type="text" name="username" id="username" placeholder="请输入您的用户名" />
-                <label id="usernameInfo" class="error" for="username"></label>
-            </p>
-            <p>
-                <label class="fwidth" for="password">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
-                <input type="password" name="password" id="password" placeholder="请输入您的密码" />
-                <label id="passInfo" class="error" for="password"></label>
-            </p>
-            <p>
-                <label class="fwidth" for="repass">重复密码：</label>
-                <input type="password" name="repass" id="passwordAgain" placeholder="请再次输入您的密码" />
-                <label id="passwordAgainInfo" class="error" for="repass"></label>
-            </p>
-            <p>
-                <label class="fwidth" for="email">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</label>
-                <input type="text" name="email" id="email" placeholder="请输入您的邮箱" />
-                <label id="emailInfo" class="error" for="email"></label>
-            </p>
-            <p>
-                <input type="submit" value="注&nbsp;&nbsp;册" name="submit" />
-            </p>
-        </form>
-    </fieldset>
-    <script src="script/thirdplugins/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript">
+    </style></head><body><fieldset><form action=http://10.31.158.55/aiqiyistore/php/registry.php method=post id=form1><p><label class=fwidth for=username>用户名字：</label> <input type=text id=username placeholder=请输入您的用户名> <label id=usernameInfo class=error for=username></label></p><p><label class=fwidth for=password>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label> <input type=password id=password placeholder=请输入您的密码> <label id=passInfo class=error for=password></label></p><p><label class=fwidth for=repass>重复密码：</label> <input type=password id=passwordAgain placeholder=请再次输入您的密码> <label id=passwordAgainInfo class=error for=repass></label></p><p><label class=fwidth for=email>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</label> <input type=text id=email placeholder=请输入您的邮箱> <label id=emailInfo class=error for=email></label></p><p><input type=submit value=注册 name=submit></p></form></fieldset><script src=script/thirdplugins/jquery.js type=text/javascript charset=utf-8></script><script type=text/javascript>
         $(function() {
             //用户名
             $("#username").blur(function() {
@@ -102,13 +64,11 @@
             }
 
             $('#username').change(function() {
-                let $username = $('#username').val();
                 $.ajax({
                     type: 'post',
-                    url: '../php/registry.php',
-                    dataType: 'json',
+                    url: 'http://10.31.158.55/aiqiyistore/php/registry.php',
                     data: {
-                        name: $username
+                        name: $(id).val()
                     }
                 }).success(function(data) {
                     console.log(data)
@@ -121,8 +81,6 @@
                     }
                 });
             })
-
-
 
             //密码
             $("#password").blur(function() {
@@ -205,7 +163,4 @@
                 return false;
             };
         });
-    </script>
-</body>
-
-</html>
+    </script></body></html>
